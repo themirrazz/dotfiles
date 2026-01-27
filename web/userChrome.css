@@ -1,0 +1,58 @@
+.titlebar-button:not(:hover) {
+    > .toolbarbutton-icon {
+        @media not (-moz-gtk-theme-family: breeze) {
+            transition: background-color 0.2s ease;
+        }
+        @media (-moz-gtk-theme-family: adwaita) or (-moz-gtk-theme-family: yaru) {
+            background-color: transparent !important;
+        }
+        background-size: min(16px, 24px - 2 * env(hairline)) !important;
+        transition: none !important;
+    }
+    &:hover > .toolbarbutton-icon {
+        color: black !important;
+        background-color: white !important;
+    }
+}
+
+.titlebar-button:hover {
+    > .toolbarbutton-icon {
+        transition: none !important;
+        color: black !important;
+        background-color: white !important;
+    }
+}
+
+:-moz-window-inactive .titlebar-button.titlebar-close:hover {
+    > .toolbarbutton-icon {
+        background-color: #da4453 !important;
+    }
+}
+
+.titlebar-button.titlebar-close:hover {
+    > .toolbarbutton-icon {
+        background-color: #ff98a2 !important;
+    }
+}
+
+.tab-background {
+    border-radius: 30px !important;
+}
+
+.urlbar-background, #searchbar {
+    border-radius: 20px !important;
+}
+
+[breakout][breakout-extend][open] > .urlbar-background {
+    background-color: #42414dd2 !important;
+    backdrop-filter: blur(30px) !important;
+}
+
+.searchmode-switcher, .identity-box-button {
+    border-radius: 20px !important;
+}
+
+.titlebar-buttonbox {
+    --titlebar-button-spacing: 3px !important; 
+    --titlebar-button-size: 20px !important;
+}

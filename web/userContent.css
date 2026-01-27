@@ -1,0 +1,66 @@
+@-moz-document url("about:home"), url("about:newtab") {
+    .search-wrapper .search-handoff-button, .search-wrapper input {
+        border-radius: 30px !important;
+    }
+    body {
+        background-image: url(wallpaper.webp) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+    }
+    .search-handoff-button {
+        background: #42414d93 var(--newtab-search-icon) 16px center no-repeat !important;
+        backdrop-filter: blur(10px);
+    }
+    .top-site-outer .tile {
+        background: #42414d93 !important;
+        backdrop-filter: blur(10px);
+    }
+    html .customize-menu-animate-wrapper {
+        background-color: #0000004d !important;
+        backdrop-filter: blur(10px);
+        height: calc(100% - 32px) !important;
+        top: 16px;
+        right: 16px !important;
+        animation: 500ms ease-in-out 0s infinite alternate both running a0 !important;
+        border-radius: 30px;
+    }
+
+    .customize-menu {
+        position: relative;
+    }
+    .customize-menu .close-button-wrapper { background-color: transparent !important; }
+}
+
+@keyframes a0 {
+    0% { top: 12px }
+    50% { top: 16px }
+    100% { top: 20px }
+}
+
+@-moz-keyframes a0 {
+    0% { top: 12px }
+    50% { top: 16px }
+    100% { top: 20px }
+}
+
+@-moz-document url("about:preferences"), url("about:addons") {
+    :root {
+        background-image: url(wallpaper.webp) !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        background-position: center !important;
+        --background-color-canvas: #0000005c !important;
+        --background-color-box: #0000005c !important;
+        --promo-background-color: #0000005c !important;
+    }
+    body {
+        background-color: #00000074 !important;
+        backdrop-filter: blur(10px);
+    }
+    .sticky-container, .main-search, .main-heading { background-color: transparent !important; }
+}
+
+@-moz-document url("about:preferences") {
+    vbox.main-content { mask-image: linear-gradient(to bottom, transparent, black, black, black, black, transparent); }
+}

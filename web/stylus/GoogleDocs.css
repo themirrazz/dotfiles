@@ -1,9 +1,9 @@
-@-moz-document url-prefix("https://docs.google.com/document/d/") {
-#docs-titlebar-share-client-button {
+@-moz-document url-prefix("https://docs.google.com/document/d/"), url-prefix("https://docs.google.com/spreadsheets/d/"), url-prefix("https://docs.google.com/presentation/d/"), url-prefix("https://docs.google.com/drawings/d/") {
+#docs-titlebar-share-client-button, .titlebar-request-access-button {
     transition: 300ms;
 }
 
-#docs-titlebar-share-client-button:hover {
+#docs-titlebar-share-client-button:hover, .titlebar-request-access-button:hover {
     transform: scale(1.2);
     /* animation-fill-mode: forwards; */
     animation-name: wibblyWobbly-x1b-u008a-scale;
@@ -42,7 +42,7 @@
 
 .docs-collapsable-toolbar-control:not(:hover):not(:active) { background: transparent !important }
 
-#docs-toolbar-wrapper:hover { transform: scale(1.001); }
+/*#docs-toolbar-wrapper:hover { transform: scale(1.001); }*/
 
 .docs-collapsable-toolbar-control { transition: 140ms; }
 
@@ -56,6 +56,33 @@
 .docs-collapsable-toolbar-control:not(.goog-toolbar-separator):hover ~ .docs-collapsable-toolbar-control:not(.goog-toolbar-separator) ~ .docs-collapsable-toolbar-control:not(.goog-toolbar-separator) { transform: scale(1.15); }
 .docs-collapsable-toolbar-control:not(.goog-toolbar-separator):hover ~ .docs-collapsable-toolbar-control:not(.goog-toolbar-separator) ~ .docs-collapsable-toolbar-control:not(.goog-toolbar-separator) ~ .docs-collapsable-toolbar-control:not(.goog-toolbar-separator) { transform: scale(1.075); }
 /**/
+
+.docs-branding-container a { background: transparent !important; }
+.docs-grille-gm3 .docs-menubar { overflow: visible !important; }
+#docs-menubar .menu-button { transition: 300ms; }
+#docs-menubar .menu-button:hover { transform: scale(1.2); z-index: 100; }
+
+#docs-menubar .menu-button:nth-of-type(1):hover { color: white; background-color: #ff0000; }
+#docs-menubar .menu-button:nth-of-type(2):hover { color: white; background-color: #ff4d00; }
+#docs-menubar .menu-button:nth-of-type(3):hover { color: white; background-color: #ff8c00; }
+#docs-menubar .menu-button:nth-of-type(4):hover { color: black; background-color: #ffc800; }
+#docs-menubar .menu-button:nth-of-type(5):hover { color: black; background-color: #b9db1e; }
+#docs-menubar .menu-button:nth-of-type(6):hover { color: white; background-color: #48ce1d; }
+#docs-menubar .menu-button:nth-of-type(7):hover { color: white; background-color: #16ca53; }
+#docs-menubar .menu-button:nth-of-type(8):hover { color: white; background-color: #3779d9; }
+#docs-menubar .menu-button:nth-of-type(9):hover { color: white; background-color: #192bc1; }
+#docs-menubar .menu-button:nth-of-type(10):hover { color: white; background-color: #6415bd; }
+#docs-menubar .menu-button:nth-of-type(11):hover { color: white; background-color: #a149c4; }
+
+/*
+#docs-edit-menu:hover { color: white; background-color: #ff7b00; }
+#docs-view-menu:hover { color: white; background-color: #ffb300; }
+#docs-insert-menu:hover { color: black; background-color: #fff200; }
+#docs-format-menu:hover { color: white; background-color: #67db50; }
+#docs-tools-menu:hover { color: white; background-color: #1dc132; }
+#docs-extensions-menu:hover { color: white; background-color: #2f4bea; }
+#docs-help-menu:hover { color: white; background-color: #a54bdd; }
+*/
 
 
 @keyframes wibblyWobbly-x1b-u008a-scale {
@@ -161,5 +188,149 @@
     96% { transform: skew(0.5deg, -0.5deg); }
     /* fin */
     100% { transform: skew(0deg, 0deg); }
+}
+}
+
+@-moz-document url-prefix("https://docs.google.com/presentation/d/") {
+@keyframes LeftCurtainAnimation {
+    0% {
+        left: -50%;
+        transform: skew(-1deg, 0deg);
+    }
+    2% {
+        left: -47%;
+        transform: skew(-3deg, 0deg);
+    }
+    8% {
+        left: -37%;
+        transform: skew(-8deg, 0deg);
+    }
+    11.4% {
+        left: -24%;
+        transform: skew(-8deg, 0deg);
+    }
+    15% {
+        left: -12%;
+        transform: skew(-6deg, 0deg);
+    }
+    18% {
+        left: -5%;
+        transform: skew(-3deg, 0deg);
+    }
+    21.1% {
+        left: 0%;
+        transform: skew(-2deg, 0deg);
+    }
+    24% {
+        left: 0%;
+        transform: skew(-1deg, 0deg);
+    }
+    28% {
+        left: 0%;
+        transform: skew(0);
+    }
+    70% {
+        left: 0%;
+        transform: skew(0);
+    }
+    76% {
+        left: -10%;
+        transform: skew(6deg, 0deg);
+    }
+    82% {
+        left: -24%;
+        transform: skew(8deg, 0deg);
+    }
+    89% {
+        left: -40%;
+        transform: skew(10deg, 0deg);
+    }
+    90% {
+        left: -50%;
+        transform: skew(10deg, 0deg);
+    }
+    94% {
+        left: -50%;
+        transform: skew(7deg, 0deg);
+    }
+    96% {
+        left: -50%;
+        transform: skew(4deg, 0deg);
+    }
+    100% {
+        left: -50%;
+        transform: skew(0);
+    }
+}
+
+@keyframes RightCurtainAnimation {
+    0% {
+        right: -50%;
+        transform: skew(1deg, 0deg);
+    }
+    2% {
+        right: -47%;
+        transform: skew(3deg, 0deg);
+    }
+    8% {
+        right: -37%;
+        transform: skew(8deg, 0deg);
+    }
+    11.4% {
+        right: -24%;
+        transform: skew(8deg, 0deg);
+    }
+    15% {
+        right: -12%;
+        transform: skew(6deg, 0deg);
+    }
+    18% {
+        right: -5%;
+        transform: skew(3deg, 0deg);
+    }
+    21.1% {
+        right: 0%;
+        transform: skew(2deg, 0deg);
+    }
+    24% {
+        right: 0%;
+        transform: skew(1deg, 0deg);
+    }
+    28% {
+        right: 0%;
+        transform: skew(-0);
+    }
+    70% {
+        right: 0%;
+        transform: skew(-0);
+    }
+    76% {
+        right: -10%;
+        transform: skew(-6deg, 0deg);
+    }
+    82% {
+        right: -24%;
+        transform: skew(-8deg, 0deg);
+    }
+    89% {
+        right: -40%;
+        transform: skew(-10deg, 0deg);
+    }
+    90% {
+        right: -50%;
+        transform: skew(-10deg, 0deg);
+    }
+    94% {
+        right: -50%;
+        transform: skew(-7deg, 0deg);
+    }
+    96% {
+        right: -50%;
+        transform: skew(-4deg, 0deg);
+    }
+    100% {
+        right: -50%;
+        transform: skew(0);
+    }
 }
 }

@@ -189,6 +189,16 @@
     /* fin */
     100% { transform: skew(0deg, 0deg); }
 }
+
+.javascriptMaterialdesignGm3WizDialog-dialog__surface, .javascriptMaterialdesignGm3WizDialog-dialog--fullscreen .javascriptMaterialdesignGm3WizDialog-dialog__header, .javascriptMaterialdesignGm3WizListShared-divider {
+    background-color: #404040 !important;
+}
+
+.javascriptMaterialdesignGm3WizListShared-list-item, .fontsListCssSelectedFontsListItem {
+    background-color: #333232 !important;
+}
+
+.fontsBarCssMyFontsLabel { color: white; }
 }
 
 @-moz-document url-prefix("https://docs.google.com/presentation/d/") {
@@ -332,5 +342,31 @@
         right: -50%;
         transform: skew(0);
     }
+}
+}
+
+@-moz-document url-prefix("https://docs.google.com/drivesharing/driveshare?") {
+body { color: white; }
+.vhoiae.KkxPLb {
+    --dt-on-background: #ffffff;
+    --dt-on-surface: #ffffff;
+    --dt-on-surface-variant: #a8a8a8;
+    --gm3-button-outlined-with-icon-icon-color: #9cc270;
+    --gm3-sys-color-primary: #9cc270;
+    --mdc-theme-surface: #202020;
+}
+
+.KGC9Kd-hJ4r2e-yrriRe { --gm3-form-field-label-text-color: #d0d0d0; }
+
+.xbeRR { --mdc-theme-surface: #202020; }
+
+.YMNIz::after { color: #a8a8a8; }
+
+.vhoiae .FCIEcc .VfPpkd-StrnGf-rymPhb, .X9XeLb .FCIEcc .VfPpkd-StrnGf-rymPhb, .cWKK1c .FCIEcc .VfPpkd-StrnGf-rymPhb, .aJfoSc .FCIEcc .VfPpkd-StrnGf-rymPhb, .TOb6Ze .FCIEcc .VfPpkd-StrnGf-rymPhb {
+    background-color: #202020;
+}
+
+.xEuuXd {
+    --gm3-card-elevated-container-color: #2f2f2f;
 }
 }

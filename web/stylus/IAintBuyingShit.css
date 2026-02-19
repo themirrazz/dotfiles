@@ -1,3 +1,7 @@
 @-moz-document url-prefix("https://docs.google.com/") {
-    #docs-sidekick-gen-ai-promo-button-container, #workspace-onegoogle-pep-container { display: none; }
+    #docs-sidekick-gen-ai-promo-button-container, #workspace-onegoogle-pep-container { display: none !important; }
+}
+
+@-moz-document url-prefix("https://drive.google.com/") {
+    #bPjCde, .Iu19ad-OkO9ve-yp5uJf-j { display: none !important; }
 }

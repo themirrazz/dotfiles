@@ -1,0 +1,123 @@
+@-moz-document url-prefix("https://docs.google.com/") {
+:root {
+    --thmrzz-background: #222;
+    --thmrzz-background-alt: #333;
+    --thmrzz-foreground: white;
+    --thmrzz-foreground-alt: white;
+    --thmrzz-tooltip-color: #333;
+    --thmrzz-menu-color: #373737;
+    --thmrzz-menu-item-color: #373737;
+    --thmrzz-menu-item-color-hover: #404040;
+    --thmrzz-menu-item-text-color: white;
+}
+
+:root {
+    --thmrzz-docs-tb-button-hover: rgba(215, 215, 215, .08);
+    --thmrzz-docs-tb-button-text-color: rgba(255, 255, 255, .7);
+    --thmrzz-docs-high-container-bg: #333;
+    --thmrzz-toolbar-button-selected: #c1c1c124;
+    --thmrzz-docs-gm3-tabs-primary-container-color: transparent;
+}
+
+:root, .docsCommonWiz {
+    /* Background & Foreground */
+    --gm3-sys-color-surface-container-low: var(--thmrzz-docs-low-container-bg,var(--thmrzz-background, #f8fafd));
+    --gm3-sys-color-surface-container-high: var(--thmrzz-docs-high-container-bg,var(--thmrzz-background, #e9eef6));
+    --gm3-sys-color-surface: var(--thmrzz-background, #f8fafd);
+    --gm3-sys-color-background: var(--thmrzz-background, #f8fafd);
+    --gm3-sys-color-on-surface: var(--thmrzz-foreground,#1f1f1f);
+    --gm3-sys-color-on-surface-variant: var(--thmrzz-foreground-alt,var(--thmrzz-foreground,#444746));
+    /* Buttons */
+    --gm3-sys-color-secondary-container: var(--thmrzz-button-color, #c2e7ff);
+    --gm3-sys-color-on-secondary-container: var(--thmrzz-button-text-color, #004a77);
+    --gm3-dropdown-button-outlined-hover-outline-color: var(--thmrzz-menu-item-outline, var(--gm3-sys-color-on-surface, #1f1f1f));
+    --gm3-sys-color-surface-container: var(--thmrzz-toolbar-background,var(--thmrzz-background-alt,#f0f4f9));
+    --og-bar-background: var(--og-bar-background,var(--gm3-sys-color-background,#fff));
+    --gm3-sys-color-primary-container: var(--thmrzz-toolbar-button-selected,var(--thmrzz-docs-gm3s-color-primary-container,#d3e3fd));
+    --gm3-tabs-primary-container-color: var(--thmrzz-docs-gm3-tabs-primary-container-color,var(--gm3-sys-color-surface,#fff));
+    --gm3-list-list-item-container-color: var(--thmrzz-menu-item-color) !important;
+}
+
+.javascriptMaterialdesignGm3WizListShared-list-item, .javascriptMaterialdesignGm3WizListShared-list.javascriptMaterialdesignGm3WizMenu-menu__list {
+    background-color: var(--thmrzz-menu-item-color)
+}
+
+.javascriptMaterialdesignGm3WizTabsPrimary-tab {
+    background-color: transparent !important;
+}
+
+.javascriptMaterialdesignGm3WizTabsPrimary-tab-bar { border-bottom-color: #46464675 !important; }
+
+.docs-homescreen-grid-item-thumbnail, .docs-homescreen-templates-templateview-preview img {
+    filter: invert(90%) hue-rotate(180deg);
+}
+
+.docs-grille-gm3.docs-gm #docs-toolbar-mode-switcher.goog-toolbar-menu-button-hover {
+    background-color: var(--thmrzz-docs-tb-button-hover, rgba(68,71,70,.08));
+}
+
+.goog-menu {
+    background-color: var(--thmrzz-menu-color, var(--gm3-sys-color-surface,#fff)) !important;
+}
+
+.goog-menuitem, .docs-gm .goog-menuitem {
+    background-color: var(--thmrzz-menu-item-color, #f2f2f2);
+}
+
+.goog-option-selected .goog-menuitem-content, .goog-menuitem-content {
+    color: var(--thmrzz-menu-item-text-color, #333);
+}
+
+.goog-menuitem-highlight,.docs-gm .goog-menuitem.goog-menuitem-hover:hover,.docs-gm .goog-menuitem.goog-menuitem-highlight{
+    background-color: var(--thmrzz-menu-item-color-hover,var(--thmrzz-menu-item-color, #f2f2f2)) !important;
+}
+
+.goog-menuitem-highlight .goog-menuitem-content, .goog-menuitem-hover .goog-menuitem-content {
+    color: var(--thmrzz-menu-item-text-color, #333);
+}
+
+.docs-homescreen-leftmenu-menuitem-text {
+    color: var(--thmrzz-menu-item-text-color, #393939);
+}
+
+.docs-material .goog-toolbar-button, .docs-material .goog-toolbar-menu-button {
+    color: var(--thmrzz-docs-tb-button-text-color, rgba(0,0,0,.7));
+}
+
+.kix-appview-editor { background-color: transparent !important; }
+
+.docs-grille-gm3 .jfk-tooltip {
+    background-color: var(--thmrzz-tooltip-color,var(--gm3-sys-color-on-surface,#1f1f1f));
+}
+
+.docs-grille-gm3 #docs-titlebar-share-client-button .jfk-button.jfk-button-hover, .docs-grille-gm3 #scb-quick-actions-menu-button.goog-flat-menu-button.goog-flat-menu-button-hover {
+    background-color: var(--thmrzz-button-hover-color, #b2d7ef);
+}
+
+.docs-homescreen-fcc-flex-content-wrapper, .docs-homescreen-fcc-content { background: var(--thmrzz-background-alt, #f2f2f2); }
+
+#docs-editor, #docs-editor-container { background: var(--gm3-sys-color-surface-container-low, #f8fafd) }
+
+/* body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome) { background-color: #202020; }
+.docs-titlebar-buttons { background: transparent !important; } */
+
+.docs-icon { filter: invert(100%) hue-rotate(180deg); }
+
+.modal-dialog-title, .modal-dialog-content { background-color: transparent; }
+.docs-gm #docs-offline-optinpromo-description, .docs-gm #docs-offline-optinpromo-learn-more-container, .docs-gm .modal-dialog, .docs-gm .modal-dialog-content, .docs-gm .modal-dialog.google-url-picker { color: #c8c8c8; }
+.modal-dialog.active-account-dialog { background-color: #333; }
+.javascriptMaterialdesignGm3WizDialog-dialog__surface { background-color: #333; }
+
+.javascriptMaterialdesignGm3WizButtonOutlined-button__label { color: white; }
+.javascriptMaterialdesignGm3WizButtonOutlined-button:hover .javascriptMaterialdesignGm3WizButtonOutlined-button__label { color: #9f9ef9; }
+}
+
+@-moz-document url-prefix("https://docs.google.com/document/d/") {
+.kix-canvas-tile-content svg rect { fill: #202020; }
+.kix-rotatingtilemanager canvas { filter: hue-rotate(180deg) invert(100%); }
+}
+
+@-moz-document url-prefix("https://docs.google.com/drawings/d/") {
+#workspace > svg { filter: hue-rotate(180deg) invert(90%); }
+#workspace .canvas { filter: hue-rotate(180deg) invert(90%); }
+}

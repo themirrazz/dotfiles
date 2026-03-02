@@ -5,3 +5,7 @@
 @-moz-document url-prefix("https://drive.google.com/") {
     #bPjCde, .Iu19ad-OkO9ve-yp5uJf-j { display: none !important; }
 }
+
+@-moz-document url-prefix("https://gemini.google.com") {
+    upsell-button { display: none !important; }
+}

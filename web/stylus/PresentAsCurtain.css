@@ -1,0 +1,143 @@
+@-moz-document url-prefix("https://docs.google.com/presentation/d/") {
+@keyframes LeftCurtainAnimation {
+    0% {
+        left: -50%;
+        transform: skew(-1deg, 0deg);
+    }
+    2% {
+        left: -47%;
+        transform: skew(-3deg, 0deg);
+    }
+    8% {
+        left: -37%;
+        transform: skew(-8deg, 0deg);
+    }
+    11.4% {
+        left: -24%;
+        transform: skew(-8deg, 0deg);
+    }
+    15% {
+        left: -12%;
+        transform: skew(-6deg, 0deg);
+    }
+    18% {
+        left: -5%;
+        transform: skew(-3deg, 0deg);
+    }
+    21.1% {
+        left: 0%;
+        transform: skew(-2deg, 0deg);
+    }
+    24% {
+        left: 0%;
+        transform: skew(-1deg, 0deg);
+    }
+    28% {
+        left: 0%;
+        transform: skew(0);
+    }
+    70% {
+        left: 0%;
+        transform: skew(0);
+    }
+    76% {
+        left: -10%;
+        transform: skew(6deg, 0deg);
+    }
+    82% {
+        left: -24%;
+        transform: skew(8deg, 0deg);
+    }
+    89% {
+        left: -40%;
+        transform: skew(10deg, 0deg);
+    }
+    90% {
+        left: -50%;
+        transform: skew(10deg, 0deg);
+    }
+    94% {
+        left: -50%;
+        transform: skew(7deg, 0deg);
+    }
+    96% {
+        left: -50%;
+        transform: skew(4deg, 0deg);
+    }
+    100% {
+        left: -50%;
+        transform: skew(0);
+    }
+}
+
+@keyframes RightCurtainAnimation {
+    0% {
+        right: -50%;
+        transform: skew(1deg, 0deg);
+    }
+    2% {
+        right: -47%;
+        transform: skew(3deg, 0deg);
+    }
+    8% {
+        right: -37%;
+        transform: skew(8deg, 0deg);
+    }
+    11.4% {
+        right: -24%;
+        transform: skew(8deg, 0deg);
+    }
+    15% {
+        right: -12%;
+        transform: skew(6deg, 0deg);
+    }
+    18% {
+        right: -5%;
+        transform: skew(3deg, 0deg);
+    }
+    21.1% {
+        right: 0%;
+        transform: skew(2deg, 0deg);
+    }
+    24% {
+        right: 0%;
+        transform: skew(1deg, 0deg);
+    }
+    28% {
+        right: 0%;
+        transform: skew(-0);
+    }
+    70% {
+        right: 0%;
+        transform: skew(-0);
+    }
+    76% {
+        right: -10%;
+        transform: skew(-6deg, 0deg);
+    }
+    82% {
+        right: -24%;
+        transform: skew(-8deg, 0deg);
+    }
+    89% {
+        right: -40%;
+        transform: skew(-10deg, 0deg);
+    }
+    90% {
+        right: -50%;
+        transform: skew(-10deg, 0deg);
+    }
+    94% {
+        right: -50%;
+        transform: skew(-7deg, 0deg);
+    }
+    96% {
+        right: -50%;
+        transform: skew(-4deg, 0deg);
+    }
+    100% {
+        right: -50%;
+        transform: skew(0);
+    }
+}
+}

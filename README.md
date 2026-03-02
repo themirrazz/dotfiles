@@ -4,11 +4,12 @@
 ```
 ├── web
 │  ├── stylus
-│  │  ├── GoogleDocs.js
-│  │  └── IAintBuyingShit.css
+│  │  ├── GoogleDocs.css
+│  │  ├── IAintBuyingShit.css
+│  │  └── PresentAsCurtain.css
 │  ├── tampermonkey
 │  │  ├── googleDocsMacBar.js
-│  │  └── googleSlidesPresentAnimation.js
+│  │  └── presentAsCurtain.js
 │  ├── userChrome.css
 │  ├── userContent.css
 │  └── README.md

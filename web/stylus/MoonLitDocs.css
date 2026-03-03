@@ -101,6 +101,8 @@
 /* body.docs-grille-gm3, #docs-chrome:not(.docs-hub-chrome) { background-color: #202020; }
 .docs-titlebar-buttons { background: transparent !important; } */
 
+#docs-chrome:not(.docs-hub-chrome), .docs-titlebar-buttons.docs-titlebar-buttons-view-mode { background-color: transparent !important; }
+
 .docs-icon { filter: invert(100%) hue-rotate(180deg); }
 
 .modal-dialog-title, .modal-dialog-content { background-color: transparent; }
@@ -110,6 +112,42 @@
 
 .javascriptMaterialdesignGm3WizButtonOutlined-button__label { color: white; }
 .javascriptMaterialdesignGm3WizButtonOutlined-button:hover .javascriptMaterialdesignGm3WizButtonOutlined-button__label { color: #9f9ef9; }
+
+.commonNoticeComponentCautionContainer {
+    /* background-color: #fff2b4; */
+    background-color: #756412;
+}
+
+.goog-submenu-arrow { filter: invert(80%) }
+
+.fontsListCssSelectedFontsListItem { background: #484848; }
+
+#help_panel_main_frame { filter: invert(90%) hue-rotate(180deg); }
+
+.docs-homescreen-grid-item-title { color: #e1e1e1; }
+
+.companion-shell-content-component.companion-shell-guest { background-color: #333; }
+
+.companion-shell-iframe[title="Maps"],
+.companion-shell-iframe[title="Contacts"],
+.companion-shell-iframe[title="Calendar"],
+.companion-shell-iframe[title="Keep"],
+.companion-shell-iframe[title="Tasks"]
+{ filter: invert(90%) hue-rotate(180deg); }
+
+.companion-shell-content-component, .companion-shell, .companion-shell-header { background-color: #333; }
+/* .companion-shell-content-component { filter: hue-rotate(180deg) invert(90%); } */
+/* .companion-shell-splash-screen-app-logo { filter: hue-rotate(180deg) invert(90%); } */
+#companion-shell-subtitle-text { color: #919ca4; }
+#companion-shell-subtitle-text-id { color: #cecece; }
+.companion-shell-header-element.companion-shell-header-button.companion-shell-close-button svg { fill: white; }
+
+.app-switcher-button-selected .app-switcher-button-icon-background.app-switcher-button-icon-background-inner
+{ filter: hue-rotate(180deg) invert(80%); }
+
+.docs-access-level-indicator-menu .docs-access-level-indicator-menu-text { color: white; }
+#docs-access-level-indicator .goog-flat-menu-button-caption.goog-inline-block { color: white; }
+#docs-access-level-indicator.goog-flat-menu-button-hover { background-color: #c1c1c147 !important; }
 }
 
 @-moz-document url-prefix("https://docs.google.com/document/d/") {
@@ -120,4 +158,47 @@
 @-moz-document url-prefix("https://docs.google.com/drawings/d/") {
 #workspace > svg { filter: hue-rotate(180deg) invert(90%); }
 #workspace .canvas { filter: hue-rotate(180deg) invert(90%); }
+}
+
+@-moz-document url-prefix("https://docs.google.com/drivesharing/driveshare?") {
+body { color: white; }
+.vhoiae.KkxPLb {
+    --dt-on-background: #ffffff;
+    --dt-on-surface: #ffffff;
+    --dt-on-surface-variant: #a8a8a8;
+    /* --gm3-button-outlined-with-icon-icon-color: #9cc270; */
+    /* --gm3-sys-color-primary: #9cc270; */
+    --mdc-theme-surface: #202020;
+     --gm3-button-text-disabled-label-text-color: #c1c1c1;
+}
+
+.KGC9Kd-hJ4r2e-yrriRe { --gm3-form-field-label-text-color: #d0d0d0; }
+.xbeRR { --mdc-theme-surface: #202020; }
+.vhoiae.KkxPLb { --dt-outline-variant: black; }
+.YMNIz::after { color: #a8a8a8; }
+.mjB9rc, .yF6xpb { border-top-color: #2f2f2f; }
+
+.vhoiae .FCIEcc .VfPpkd-StrnGf-rymPhb, .X9XeLb .FCIEcc .VfPpkd-StrnGf-rymPhb, .cWKK1c .FCIEcc .VfPpkd-StrnGf-rymPhb, .aJfoSc .FCIEcc .VfPpkd-StrnGf-rymPhb, .TOb6Ze .FCIEcc .VfPpkd-StrnGf-rymPhb {
+    background-color: #202020;
+}
+
+.xEuuXd {
+    --gm3-card-elevated-container-color: #2f2f2f;
+    --gm3-sys-color-on-surface: #979797;
+    --gm3-sys-color-on-surface-variant: #6c6c6c;
+}
+
+textarea.qdOxv-fmcmS-wGMbrd { color: white !important; }
+span.dA2hVd-NLUYnc-xRPttf-NLUYnc.dA2hVd-NLUYnc-V67aGc-OWXEXe-L6cTce,
+span.dA2hVd-NLUYnc-xRPttf-OhKo9c { color: #bfbfbf !important; }
+.notranslate.VfPpkd-kBDsod svg.Q6yead.QJZfhe { fill: #bfbfbf }
+.notranslate.tgHSg.RsJJTe { filter: hue-rotate(180deg) invert(80%); }
+}
+
+@-moz-document regexp("https:\\/\\/contacts\\.google\\.com\\/u\\/[0-9]*\\/widget\\/companion\\?origin=https%3A%2F%2Fdocs\\.google\\.com&.*") {
+img.hRP3bd, img.nj9uHf { filter: hue-rotate(180deg) invert(110%); }
+}
+
+@-moz-document regexp("https:\\/\\/keep\\.google\\.com\\/u\\/[0-9]*\\/companion\\?origin=https%3A%2F%2Fdocs\\.google\\.com&.*") {
+img.HiaYvf-SmKAyb { filter: hue-rotate(180deg) invert(110%); }
 }

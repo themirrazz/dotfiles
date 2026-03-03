@@ -153,11 +153,18 @@
 @-moz-document url-prefix("https://docs.google.com/document/d/") {
 .kix-canvas-tile-content svg rect { fill: #202020; }
 .kix-rotatingtilemanager canvas { filter: hue-rotate(180deg) invert(100%); }
+.kix-cursor-caret { filter: hue-rotate(180deg) invert(100%);  }
 }
 
 @-moz-document url-prefix("https://docs.google.com/drawings/d/") {
 #workspace > svg { filter: hue-rotate(180deg) invert(90%); }
 #workspace .canvas { filter: hue-rotate(180deg) invert(90%); }
+}
+
+@-moz-document url-prefix("https://docs.google.com/forms/d/") {
+html { filter: hue-rotate(180deg) invert(90%); }
+div.uArJ5e.Y5FYJe.cjq2Db.cLmX2b[aria-label="Forms Home"], img, iframe.GonXTb[src^="https://www.youtube.com/embed/"] { filter: hue-rotate(180deg) invert(110%); }
+.oD4MFb { background-color: transparent; }
 }
 
 @-moz-document url-prefix("https://docs.google.com/drivesharing/driveshare?") {

@@ -10,6 +10,7 @@
     }
     .search-handoff-button {
         background: #42414d93 var(--newtab-search-icon) 16px center no-repeat !important;
+        background-size: 24px 24px !important;
         backdrop-filter: blur(10px);
     }
     .top-site-outer .tile {
